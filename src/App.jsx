@@ -158,6 +158,9 @@ const MaxWidthBox = styled.div`
   max-width: 1500px;
   padding: 0 5rem;
   margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    padding: 0 2.5rem;
+  }
 `;
 
 const HeroSection1 = styled.section`
@@ -202,17 +205,28 @@ const WhiteBottom = styled.div`
     justify-content: center;
     text-align: center;
     padding: 0.75rem 0 0 0;
+    @media screen and (max-width: 1000px) {
+      width: 800vw;
+      height: 800vw;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 300vw;
+      height: 300vw;
+    }
   }
 `;
 const HeroSectionContent = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1000px) {
+    padding: 2.5rem 0 6.5rem 0;
+  }
   & > img {
     width: max-content;
     height: 27.5rem;
@@ -220,12 +234,15 @@ const HeroSectionContent = styled.section`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 1000px) {
+      height: 15rem;
+    }
   }
 `;
 
 const HeroSection2FadeBox = styled.div`
-  width: max-content;
-  height: max-content;
+  width: 100%;
+  height: min-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,11 +252,17 @@ const HeroSection2FadeBox = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  padding: 0 2.5rem;
   & h2 {
     font-size: 5rem;
     color: #061828;
     margin: 0 0 1.5rem 0;
     font-weight: 600;
+    text-align: center;
+    width: 100%;
+    @media screen and (max-width: 600px) {
+      font-size: 3.5rem;
+    }
   }
   & button {
     padding: 1.5rem 3.5rem;
@@ -265,6 +288,9 @@ const Header1 = styled.header`
     width: max-content;
     height: 5.5rem;
     object-fit: contain;
+    @media screen and (max-width: 600px) {
+      height: 4.5rem;
+    }
   }
   & button {
     padding: 1.75rem 5rem;
@@ -275,6 +301,11 @@ const Header1 = styled.header`
     color: #fff;
     border-radius: 1000px;
     transition: 0.5s;
+    @media screen and (max-width: 600px) {
+      padding: 1.25rem 3rem;
+      font-size: 1.75rem;
+      border: 1px solid #fff;
+    }
     &:hover {
       color: #061828;
       background-color: #fff;
@@ -286,15 +317,26 @@ const Footer1 = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    align-items: flex-end;
+  }
   & > div {
     width: max-content;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
     & > a {
       font-size: 1.65rem;
       color: #fff;
       transition: 0.35s;
       margin: 0 3.5rem 0 0;
+      @media screen and (max-width: 600px) {
+        margin: 2.5rem 0 0 0;
+      }
       &:hover {
         color: #9af4b4;
       }
@@ -324,6 +366,9 @@ const Header2 = styled.header`
     width: max-content;
     height: 5.5rem;
     object-fit: contain;
+    @media screen and (max-width: 600px) {
+      height: 4.5rem;
+    }
   }
   & button {
     padding: 1.75rem 5rem;
@@ -334,6 +379,11 @@ const Header2 = styled.header`
     color: #061828;
     border-radius: 1000px;
     transition: 0.5s;
+    @media screen and (max-width: 600px) {
+      padding: 1.25rem 3rem;
+      font-size: 1.75rem;
+      border: 1px solid #061828;
+    }
     &:hover {
       color: #e4f0fa;
       background-color: #061828;
@@ -345,15 +395,26 @@ const Footer2 = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    align-items: flex-end;
+  }
   & > div {
     width: max-content;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
     & > a {
       font-size: 1.65rem;
       color: #061828;
       transition: 0.35s;
       margin: 0 3.5rem 0 0;
+      @media screen and (max-width: 600px) {
+        margin: 2.5rem 0 0 0;
+      }
       &:hover {
         color: #9af4b4;
       }
