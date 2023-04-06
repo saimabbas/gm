@@ -87,6 +87,10 @@ const App = () => {
     );
   }, []);
 
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <MainContainer>
       <HeroSection1 className="hero-section-1-anim">
