@@ -85,6 +85,7 @@ const App = () => {
         duration: 1,
       }
     );
+    // window.history.scrollRestoration = 'manual'
   }, []);
 
   window.onbeforeunload = function () {
