@@ -225,7 +225,7 @@ const HeroSectionContent = styled.section`
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 1000px) {
-    padding: 2.5rem 0 6.5rem 0;
+    padding: 2.5rem 0 3rem 0;
   }
   & > img {
     width: max-content;
