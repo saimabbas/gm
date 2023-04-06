@@ -46,9 +46,11 @@ const App = () => {
       ".stars-bg-anim",
       {
         scale: 2,
+        rotate: 30,
       },
       {
         scale: 1,
+        rotate: 0,
         duration: 15,
         yoyo: true,
         repeat: -1,
