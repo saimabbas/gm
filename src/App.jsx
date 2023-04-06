@@ -319,6 +319,7 @@ const Footer1 = styled.footer`
   justify-content: space-between;
   @media screen and (max-width: 600px) {
     align-items: flex-end;
+    display: none;
   }
   & > div {
     width: max-content;
